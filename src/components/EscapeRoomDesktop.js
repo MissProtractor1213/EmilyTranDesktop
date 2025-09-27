@@ -457,7 +457,7 @@ export default function EscapeRoomDesktop() {
                   e.currentTarget.style.display = "none";
                 }}
               />
-              <div className="text-xl font-bold text-gray-800 mt-2">Emily Tran</div>
+              <div className="text-2xl font-bold text-gray-800 mt-2">user</div>
               <div className="text-base text-gray-600">Sign in</div>
             </div>
 
