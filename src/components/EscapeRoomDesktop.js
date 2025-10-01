@@ -318,9 +318,9 @@ function MailApp() {
 function BrowserApp() {
   const pages = [
     {
-      id: "bank",
-      title: "MyBank — Login",
-      path: `${process.env.PUBLIC_URL}/sim/files/history-bank.html`,
+      id: "treatment",
+      title: "HopeCare - Treatment Cost",
+      path: `${process.env.PUBLIC_URL}/sim/files/treatment-website.html`,
     },
     {
       id: "awareness",
