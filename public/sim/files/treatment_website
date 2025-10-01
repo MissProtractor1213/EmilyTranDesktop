@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HopeCare — Treatment Cost Overview (Fictional)</title>
+  <style>
+    :root{
+      --accent:#7c3aed;
+      --muted:#6b7280;
+      --bg:#f8fafc;
+      --card:#ffffff;
+      --danger:#ef4444;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#ffffff);color:#111827;line-height:1.5}
+    header{background:linear-gradient(90deg,var(--accent),#06b6d4);color:white;padding:2rem 1rem}
+    .container{max-width:980px;margin:0 auto;padding:1rem}
+    h1{margin:0;font-size:1.6rem}
+    p.lead{margin:.6rem 0 0;color:rgba(255,255,255,0.9)}
+    nav{margin-top:1rem;display:flex;gap:.5rem;flex-wrap:wrap}
+    nav a{background:rgba(255,255,255,0.08);padding:.4rem .7rem;border-radius:8px;color:white;text-decoration:none;font-size:.9rem}
+    main{padding:1.25rem 1rem 2rem}
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:1rem}
+    .card{background:var(--card);border-radius:10px;padding:1rem;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    .section-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem}
+    .section-title h2{margin:0;font-size:1.05rem}
+    table{width:100%;border-collapse:collapse;margin-top:.5rem}
+    th,td{padding:.6rem .5rem;text-align:left;border-bottom:1px solid #eef2f7;font-size:.95rem}
+    th{color:var(--muted);font-weight:600}
+    .muted{color:var(--muted);font-size:.92rem}
+    .amount{font-weight:700}
+    .progress{background:#eef2f7;border-radius:999px;height:14px;overflow:hidden}
+    .progress > span{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#06b6d4);width:0}
+    .donate{display:inline-block;background:var(--accent);color:white;padding:.6rem 1rem;border-radius:8px;text-decoration:none;font-weight:600}
+    .small{font-size:.88rem;color:var(--muted)}
+    .testimonial{font-style:italic;color:#111827;background:linear-gradient(180deg,#fff,#fbfbff);padding:.8rem;border-radius:8px}
+    footer{padding:1.25rem;text-align:center;color:var(--muted);font-size:.9rem}
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr; }
+      .container{padding:0 .75rem}
+    }
+    /* Print styles */
+    @media print{
+      header nav, .donate {display:none}
+      body{background:white}
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>HopeCare — Treatment Cost Overview</h1>
+      <p class="lead">Estimating the out-of-pocket and ancillary costs families may face while pursuing care for a rare condition. <strong>This is a fictional demo site.</strong></p>
+      <nav aria-label="Site navigation">
+        <a href="#breakdown">Cost breakdown</a>
+        <a href="#fundraising">Fundraising</a>
+        <a href="#stories">Patient stories</a>
+        <a href="#resources">Resources</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="grid">
+      <section class="card" aria-labelledby="overview">
+        <div class="section-title">
+          <h2 id="overview">Project summary</h2>
+          <span class="small">Fictional / mock content</span>
+        </div>
+        <p class="muted">This sample page demonstrates typical cost categories families might face during diagnosis and treatment journeys for rare diseases. The figures shown are illustrative only and not medical or financial advice.</p>
+
+        <h3 style="margin-top:1rem">What this covers</h3>
+        <ul>
+          <li>One-time costs: diagnostics, surgery, initial hospitalization</li>
+          <li>Recurring medical costs: specialized medications, infusions, monitoring</li>
+          <li>Indirect costs: travel, lodging, lost wages, home modifications</li>
+        </ul>
+
+        <div style="margin-top:1rem">
+          <div class="section-title">
+            <h2>Estimated total (fictional)</h2>
+            <div class="muted">First year estimate</div>
+          </div>
+          <div style="font-size:1.4rem;font-weight:800">$390,500</div>
+          <div class="small" style="margin-top:.4rem">Breakdown below — uses simplified assumptions for demonstration.</div>
+        </div>
+
+        <hr style="margin:1rem 0;border:none;border-top:1px solid #eef2f7" />
+
+        <h3>Detailed cost breakdown</h3>
+        <table aria-describedby="cost-table">
+          <thead>
+            <tr><th>Category</th><th class="muted">Notes</th><th style="width:120px">Estimated cost</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Diagnostic testing & genetic sequencing</td><td class="muted">Advanced labs, panels</td><td class="amount">$8,500</td></tr>
+            <tr><td>Specialist consultations & second opinions</td><td class="muted">Multiple visits, telehealth</td><td class="amount">$4,200</td></tr>
+            <tr><td>Initial hospitalization & surgery (if required)</td><td class="muted">Operating room and inpatient stay</td><td class="amount">$48,000</td></tr>
+            <tr><td>Specialized medication / biologics</td><td class="muted">Often ongoing; cost varies widely</td><td class="amount">$290,000 / year</td></tr>
+            <tr><td>Outpatient infusions & clinic visits</td><td class="muted">Nursing, infusion center fees</td><td class="amount">$18,000</td></tr>
+            <tr><td>Travel & lodging</td><td class="muted">Regional specialist visits, caretakers</td><td class="amount">$10,000</td></tr>
+            <tr><td>Home modifications & medical equipment</td><td class="muted">Ramp, hospital bed, durable equipment</td><td class="amount">$7,800</td></tr>
+            <tr><td>Lost income / caregiving</td><td class="muted">Estimated reduced household earnings</td><td class="amount">$3,000</td></tr>
+          </tbody>
+        </table>
+
+        <p class="small" style="margin-top:.75rem">Note: recurring medication figures are annualized and will vary depending on country, insurance coverage, and manufacturer assistance programs.</p>
+
+        <hr style="margin:1rem 0;border:none;border-top:1px solid #eef2f7" />
+
+        <h3>How families typically cope</h3>
+        <ul>
+          <li>Insurance appeals and prior authorization requests</li>
+          <li>Manufacturer patient-assistance & co-pay relief</li>
+          <li>Community fundraising (crowdfunding, events)</li>
+          <li>Grants from rare-disease foundations</li>
+        </ul>
+
+      </section>
+
+      <aside>
+        <div class="card" style="margin-bottom:1rem">
+          <div class="section-title">
+            <h2 id="fundraising">Fundraising snapshot</h2>
+            <div class="small">Simulation progress</div>
+          </div>
+          <p class="muted small">Goal to cover first-year out-of-pocket gap</p>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:.5rem">
+            <div>
+              <div style="font-size:1.25rem;font-weight:800">$120,350</div>
+              <div class="small">raised of $200,000 goal</div>
+            </div>
+            <div style="width:40%">
+              <div class="progress" aria-hidden="true" title="60% funded">
+                <span style="width:60%"></span>
+              </div>
+              <div class="small" style="text-align:right;margin-top:.25rem">60% funded</div>
+            </div>
+          </div>
+
+          <div style="margin-top:1rem;display:flex;gap:.5rem;">
+            <a href="#" class="donate" onclick="alert('Demo: donations are not active on this mock page.')">Donate (demo)</a>
+            <a href="#resources" class="small" style="align-self:center;text-decoration:none;color:var(--accent)">Learn about grants</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="section-title">
+            <h2>Quick facts</h2>
+            <div class="small">For designers</div>
+          </div>
+          <ul class="small muted">
+            <li>Keep figures approximate; stress emotional & logistical impact.</li>
+            <li>Privacy: avoid real patient names/photos unless consented.</li>
+            <li>Include clear disclaimers for fictional/demo content.</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <section class="card" style="margin-top:1rem" id="stories" aria-labelledby="stories-heading">
+      <div class="section-title">
+        <h2 id="stories-heading">Patient stories (fictional)</h2>
+        <div class="small">Illustrative vignettes</div>
+      </div>
+
+      <article style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+        <div>
+          <h3 style="margin:.2rem 0">Maya's story</h3>
+          <p class="muted small">Maya (fictional) travelled 400 miles for a specialized clinic. Her family faced large travel and lodging expenses while trying to secure prior authorization for a new therapy.</p>
+          <div class="testimonial" aria-label="testimonial">"The medical bills were overwhelming — the drug helped, but the co-pay and travel costs were months of worry." — <strong>Maya (fictional)</strong></div>
+        </div>
+        <div>
+          <h3 style="margin:.2rem 0">Ibrahim's story</h3>
+          <p class="muted small">Ibrahim's (fictional) child required a device and home modifications after lengthy hospitalization; grants and community drives covered a portion of the one-time costs.</p>
+          <div class="testimonial">"Support from a local foundation made the home safe for our child during recovery." — <strong>Ibrahim (fictional)</strong></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="card" id="resources" style="margin-top:1rem">
+      <div class="section-title">
+        <h2>Resources & next steps</h2>
+        <div class="small">Sample links (placeholders)</div>
+      </div>
+
+      <ul>
+        <li><a href="#" onclick="alert('Demo: placeholder link')">RareCare Foundation — patient assistance programs</a></li>
+        <li><a href="#" onclick="alert('Demo: placeholder link')">Sample checklist: preparing for long-distance treatment</a></li>
+        <li><a href="#" onclick="alert('Demo: placeholder link')">Guide: How to appeal an insurance prior authorization</a></li>
+      </ul>
+
+      <div style="margin-top:1rem;display:flex;gap:1rem;flex-wrap:wrap;">
+        <a href="#" class="donate" onclick="alert('Demo: donations not active')">Start a fundraiser</a>
+        <a href="#" style="align-self:center;text-decoration:none;color:var(--muted)" onclick="window.print()">Print this page</a>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:1rem">
+      <div class="section-title">
+        <h2>Disclaimer</h2>
+        <div class="small">Important</div>
+      </div>
+      <p class="small muted">This is <strong>entirely fictional</strong> sample content created for design, testing, or simulation purposes only. It does not represent real patient data, real organizations, or accurate medical/financial advice. For real medical information, contact licensed healthcare providers; for real financial guidance, consult a certified professional.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="small muted">HopeCare — Mock demo • Created for simulation & UX purposes</div>
+    </div>
+  </footer>
+
+</body>
+</html>
