@@ -272,7 +272,7 @@ function MailApp() {
       subject: "Treatment Money",
       from: "emily.tran@company.com",
       to: "ben.tran@mail.com",
-      path: `${process.env.PUBLIC_URL}/sim/files/emily-tran.html`,
+      path: `${process.env.PUBLIC_URL}/sim/files/emily_tran.html`,
     },
   ];
   const [selected, setSelected] = useState(emails[0]);
