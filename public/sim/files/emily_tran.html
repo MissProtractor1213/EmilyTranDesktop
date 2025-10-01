@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Email — Emily Tran to Ben</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    /* Simple email-like styling for display in a browser */
+    body {
+      background: #f2f4f8;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      margin: 0;
+      padding: 32px;
+      color: #111827;
+    }
+    .mailbox {
+      max-width: 760px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 8px 30px rgba(17,24,39,0.08);
+      overflow: hidden;
+      border: 1px solid #e6e9ee;
+    }
+    .header {
+      padding: 18px 24px;
+      background: linear-gradient(90deg, #f8fafc, #ffffff);
+      display:flex;
+      align-items:center;
+      gap:14px;
+      border-bottom:1px solid #eef2f7;
+    }
+    .avatar {
+      width:56px;
+      height:56px;
+      border-radius:8px;
+      background: linear-gradient(135deg,#8b5cf6,#06b6d4);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-weight:700;
+      font-size:18px;
+      box-shadow: 0 4px 12px rgba(14,165,233,0.08);
+    }
+    .header .meta {
+      line-height:1;
+    }
+    .header .meta .from {
+      font-weight:700;
+      color:#0f172a;
+    }
+    .header .meta .email {
+      color:#475569;
+      font-size:13px;
+    }
+
+    .envelope {
+      padding: 18px 24px;
+    }
+    .envelope .fields {
+      display:grid;
+      gap:8px;
+      margin-bottom: 18px;
+    }
+    .field {
+      display:flex;
+      gap:12px;
+      align-items:baseline;
+      color:#334155;
+      font-size:14px;
+    }
+    .field .label {
+      min-width:78px;
+      color:#64748b;
+      font-weight:600;
+      font-size:13px;
+    }
+    .subject {
+      font-size:18px;
+      font-weight:700;
+      margin:6px 0 14px;
+      color:#0b1220;
+    }
+
+    .body {
+      background:#fbfdff;
+      border:1px solid #eef5ff;
+      padding:18px;
+      border-radius:6px;
+      color:#0b1220;
+      font-size:15px;
+      line-height:1.55;
+      white-space:pre-wrap;
+    }
+
+    .signature {
+      margin-top:18px;
+      color:#475569;
+      font-size:14px;
+    }
+
+    .footer {
+      padding:14px 24px;
+      border-top:1px dashed #eef2f7;
+      color:#64748b;
+      font-size:13px;
+      background:#fafbff;
+    }
+
+    a.inline-link { color:#0b63ff; text-decoration:none; }
+    .important { font-weight:700; color:#0b1220; }
+  </style>
+</head>
+<body>
+  <div class="mailbox" role="article" aria-label="Fake email from Emily Tran">
+    <div class="header">
+      <div class="avatar" aria-hidden="true">ET</div>
+      <div class="meta">
+        <div class="from">Emily Tran</div>
+        <div class="email">emily.tran@company.com</div>
+      </div>
+    </div>
+
+    <div class="envelope">
+      <div class="fields">
+        <div class="field"><span class="label">To</span><span>Ben Tran &lt;ben.tran@mail.com&gt;</span></div>
+        <div class="field"><span class="label">Cc</span><span>—</span></div>
+        <div class="field"><span class="label">Date</span><span>October 1, 2025, 10:12 AM</span></div>
+        <div class="field"><span class="label">Subject</span><span class="subject">Update — money for your treatment is on the way</span></div>
+      </div>
+
+      <div class="body">
+        Hi Ben —<br><br>
+
+        I wanted to write and let you know I finally got confirmation that the funds will arrive next Tuesday. The insurance check and a few donations from the fundraiser cleared this morning, so as soon as I have the deposit in my account I’ll transfer the first installment to cover the clinic visit and the meds we talked about.<br><br>
+
+        You don’t have to worry about the bills right now. Focus on resting and following Dr. Patel’s instructions — I know that’s a lot easier said than done, but your health is the most important thing. I’ll call you after I get the transfer completed so you know exactly when it posts. If anything changes I’ll text you immediately.<br><br>
+
+        Also — please try to save the receipts from the pharmacy and the clinic visits. I’ll need them for reimbursement paperwork and any future claims. If you want, I can come by this weekend to pick them up (or we can drop them off at Mom’s mailbox).<br><br>
+
+        I love you, little brother. We’re getting through this together.<br><br>
+
+        Love,<br>
+        <span class="signature">Emily Tran<br/>
+        Finance Analyst<br/>
+        emily.tran@example.com • (555) 214-0789</span>
+      </div>
+    </div>
+
+    <div class="footer">
+      This is a simulated message created for display/demo purposes only. Do not use the contact details for real communication.
+    </div>
+  </div>
+</body>
+</html>
