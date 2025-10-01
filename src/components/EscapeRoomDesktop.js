@@ -320,7 +320,7 @@ function BrowserApp() {
     {
       id: "treatment",
       title: "HopeCare - Treatment Cost",
-      path: `${process.env.PUBLIC_URL}/sim/files/treatment-website.html`,
+      path: `${process.env.PUBLIC_URL}/sim/files/treatment_website.html`,
     },
     {
       id: "awareness",
