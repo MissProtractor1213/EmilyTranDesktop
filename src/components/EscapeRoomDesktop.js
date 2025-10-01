@@ -292,7 +292,7 @@ function MailApp() {
             {/* 🔴 Only "Security Concern" is red */}
             <div
               className={
-                e.subject === "Security Concern"
+                ["Security Concern", "Dispose Immediately"].includes(e.subject)
                   ? "font-semibold text-red-600 text-lg"
                   : "font-semibold text-gray-900 text-lg"
               }
