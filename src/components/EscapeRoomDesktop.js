@@ -271,8 +271,8 @@ function MailApp() {
       id: 5,
       subject: "Treatment Money",
       from: "emily.tran@company.com",
-      to: "aaron.t@mail.com",
-      path: `${process.env.PUBLIC_URL}/sim/files/email-data-transfer.html`,
+      to: "ben.tran@mail.com",
+      path: `${process.env.PUBLIC_URL}/sim/files/emily-tran.html`,
     },
   ];
   const [selected, setSelected] = useState(emails[0]);
