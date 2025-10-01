@@ -269,9 +269,9 @@ function MailApp() {
     },
     {
       id: 5,
-      subject: "[Ext] RE: Monthly Data Transfer",
-      from: "employee@company.com",
-      to: "ared@northbridge.example",
+      subject: "Treatment Money",
+      from: "emily.tran@company.com",
+      to: "aaron.t@mail.com",
       path: `${process.env.PUBLIC_URL}/sim/files/email-data-transfer.html`,
     },
   ];
