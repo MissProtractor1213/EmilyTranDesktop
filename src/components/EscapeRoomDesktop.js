@@ -113,13 +113,6 @@ function FileExplorer() {
         path: `${process.env.PUBLIC_URL}/sim/files/company-policy.html`,
       },
       {
-        name: "TEAM-PHOTO.pdf",
-        type: "html",
-        size: "1.2 MB",
-        modified: "Today 3:10 PM",
-        path: `${process.env.PUBLIC_URL}/sim/files/wafer-recipe.html`,
-      },
-      {
         name: "itinerary.doc",
         type: "html",
         suspicious: false,
@@ -213,7 +206,7 @@ function FileExplorer() {
                 <div className="flex-1">
                   <div className="text-lg font-semibold">
                     {/* 🔴 Only TEAM-PHOTO.pdf is red */}
-                    <span className={f.name === "TEAM-PHOTO.pdf" ? "text-red-600" : "text-gray-900"}>
+                    <span className={f.name === "invoice.doc" ? "text-red-600" : "text-gray-900"}>
                       {f.name}
                     </span>
                     {f.suspicious && (
